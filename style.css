@@ -1,0 +1,209 @@
+* {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(34, 34, 34);
+}
+
+html {
+    font-size: 16px;
+    background: rgb(250, 250, 250);
+    margin-top: 0em;
+}
+
+h1 {
+    color:rgb(255, 59, 59);
+    font-size: 45px;
+    text-shadow: 0 0 5px rgb(182, 182, 182);
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 0% 100%;
+    justify-items: center;
+    text-align: center;
+    top: 0;
+    padding: 0 3%;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.842);
+}
+
+.logo {
+    height: 31px;
+    width: 33px;
+
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0em;
+    align-content: space-between;
+    letter-spacing: .25em;
+}
+
+.nav_links li {
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: large;
+}
+
+.nav_links li a:hover{
+    color: white;
+    border-radius: 9px;
+    background: rgb(255, 59, 59);
+    font-weight: lighter;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+    padding: .075em;
+}
+
+#aboutUs, #myProjects, #getInTouch {
+    margin: -.5em auto;
+    width: 860px;
+    text-align: center;
+    letter-spacing: .015em;
+}
+
+#me {
+    width: 960px;
+    height: 400px;
+    background-image: url("images/One.jpg");
+    margin: 4.5rem auto 4rem auto;
+    border-radius: 27px;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+    text-align: center;
+}
+
+#me_Container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.picture {
+    height: 315px;
+    width: 315px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+}
+
+#aboutUs {
+    border-top: 3px solid rgb(34, 34, 34);
+}
+
+.skills {
+    letter-spacing: .015em;
+}
+
+section {
+    margin: 1em 0;
+    padding-top: 3em;
+    min-height: 10em;
+}
+
+section > p {
+    margin: 1em 0;
+}
+
+#myProjects h2 {
+    padding-bottom: 1em;;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: auto;
+    justify-content: space-around;
+    column-gap: .75em;
+    font-size: 12.7px;
+    align-items: space-around;
+}
+
+#projects article {
+    background:rgba(252, 252, 252, 0.55);
+    box-shadow: 0 0 8px rgb(182, 182, 182);
+    padding: 1.25em;
+    border-radius: 5.5px;
+}
+
+h3 {
+    padding-bottom: 1.5em;
+    letter-spacing: -.01em;
+}
+
+#projects article p {
+    padding-top: 2em;
+    letter-spacing: .02em;
+}
+
+#getInTouch p {
+    padding-top: 1em;
+}
+
+#getInTouch ul {
+    list-style: none;
+    padding: 0 0 1em 0;
+    border-bottom: 3px solid rgb(34, 34, 34);
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: rgb(34, 34, 34);
+    padding: 2em 0 1em 0;
+    text-align: center;
+    font-size: .8em;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: lighter;
+    letter-spacing: .05em;
+}
+
+.happy {
+    height: 200px;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+}
+
+.comp {
+    height: 200px;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+}
+
+.loops {
+    height: 200px;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgb(182, 182, 182);
+}
+
+.folder {
+    height: 85px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.linkedin {
+    height: 40px;
+    width: 40px;
+}
+
+.github {
+    height: 40px;
+    width: 40px;
+}
