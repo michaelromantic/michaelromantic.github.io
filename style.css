@@ -15,8 +15,9 @@ html {
 
 h1 {
     color:rgb(255, 59, 59);
-    font-size: 45px;
-    text-shadow: 0 0 5px rgb(182, 182, 182);
+    font-size: 48px;
+    text-shadow: 0 0 4px rgb(182, 182, 182);
+
 }
 
 
@@ -44,17 +45,17 @@ header {
     list-style: none;
     margin-top: 0em;
     align-content: space-between;
-    letter-spacing: .25em;
+    letter-spacing: .2em;
 }
 
 .nav_links li {
     padding: 0px 15px;
+    font-size: 17.5px;
 }
 
 .nav_links li a {
     text-decoration: none;
     color: rgb(34, 34, 34);
-    font-size: large;
 }
 
 .nav_links li a:hover{
@@ -75,9 +76,10 @@ header {
 
 #me {
     width: 960px;
-    height: 400px;
-    background-image: url("images/One.jpg");
-    margin: 4.5rem auto 4rem auto;
+    height: 415px;
+    background-image: url("images/Background.svg");
+    background-size: contain;
+    margin: 4.5rem auto 4.5rem auto;
     border-radius: 27px;
     box-shadow: 0 0 12px rgb(182, 182, 182);
     text-align: center;
@@ -92,8 +94,8 @@ header {
 }
 
 .picture {
-    height: 315px;
-    width: 315px;
+    height: 320px;
+    width: 320px;
     border-radius: 5px;
     box-shadow: 0 0 12px rgb(182, 182, 182);
 }
@@ -122,11 +124,11 @@ section > p {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(3, 270px);
+    grid-template-columns: repeat(3, 255px);
     grid-template-rows: auto;
     justify-content: space-around;
     column-gap: .75em;
-    font-size: 12.7px;
+    font-size: 11.5px;
     align-items: space-around;
 }
 
@@ -139,12 +141,14 @@ section > p {
 
 h3 {
     padding-bottom: 1.5em;
-    letter-spacing: -.01em;
+    letter-spacing: .02em;
 }
 
 #projects article p {
     padding-top: 2em;
-    letter-spacing: .02em;
+    letter-spacing: .025em;
+    font-size: 14px;
+    
 }
 
 #getInTouch p {
