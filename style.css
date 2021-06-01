@@ -17,7 +17,7 @@ html {
 
 h1 {
     color:rgb(255, 59, 59);
-    font-size: calc(28px + 1.20vw);
+    font-size: calc(28px + 1.05vw);
     text-shadow: 0 0 4px rgb(182, 182, 182);
 }
 
@@ -27,8 +27,16 @@ header {
     padding: 0 3%;
     position: fixed;
     width: 100%;
+    height: auto;
     background: rgba(252, 252, 252, 0.95);
-    border-bottom: 1.5px solid rgb(245, 245, 245);;
+    border-bottom: 2px solid rgb(245, 245, 245);
+    box-shadow: 2px 2px 2px rgba(216, 216, 216, 0.144);
+}
+
+nav{
+    max-height: 45px;
+    height: 6vh;
+    display: grid;
 }
 
 .nav_links {
@@ -39,12 +47,13 @@ header {
     list-style: none;
     margin-top: 0em;
     align-content: space-between;
-    letter-spacing: .2em;
+    letter-spacing: .25em;
+    font-size: calc(14px + .30vw);
 }
 
 .nav_links li {
-    padding: 0px 10px;
-    font-size: 19px;
+    padding: 0px 9px;
+
 }
 
 .nav_links li a {
@@ -58,10 +67,10 @@ header {
     background: rgb(255, 59, 59);
     font-weight: lighter;
     box-shadow: 0 0 12px rgb(182, 182, 182);
-    padding: .075em;
 }
 
 main{
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,11 +81,17 @@ main{
     flex-direction: column;
     justify-content: center;
     margin: -.5em auto;
-    max-width: 960px;
-    width: auto;
+    max-width: 915px;
+    width: 90vw;
     text-align: center;
     letter-spacing: .015em;
     padding-top: 3rem;
+    padding-left: .1em;
+    padding-right: .1em;
+}
+
+.aboutMe{
+    text-align: left;
 }
 
 #me {
@@ -84,10 +99,11 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 960px;
-    max-height: 415px;
+    max-width: 915px;
+    width: 92vw;
+    max-height: 400px;
     padding: 4em 2em 4em 2em;
-    background-image: url("images/Background.svg");
+    background-image: url("/images/BackgroundCapture.JPG");
     background-size: contain;
     margin: 4rem auto;
     border-radius: 27.5px;
@@ -105,7 +121,7 @@ main{
 
 .picture {
     height: auto;
-    width: calc(130px + 10vw);
+    width: calc(130px + 8.5vw);
     border-radius: 5px;
     box-shadow: 0 0 12px rgb(182, 182, 182);
 }
@@ -171,6 +187,7 @@ h3 {
 #getInTouch ul {
     list-style: none;
     padding: 0 0 1em 0;
+    border-bottom: 3px solid rgb(34, 34, 34);
 }
 
 footer {
@@ -183,7 +200,6 @@ footer {
     font-weight: lighter;
     letter-spacing: .015em;
     position: static;
-    border-top: 3px solid rgb(34, 34, 34);
 }
 
 .happy {
