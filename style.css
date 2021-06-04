@@ -28,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     height: auto;
-    background: rgba(252, 252, 252, 0.95);
+    background: rgba(249, 249, 251, 0.95);
     border-bottom: 2px solid rgb(245, 245, 245);
     box-shadow: 2px 2px 2px rgba(216, 216, 216, 0.144);
 }
@@ -148,7 +148,7 @@ section > p {
 }
 
 #myProjects h2 {
-    padding-bottom: 1em;
+    padding-bottom: .5em;
 }
 
 #projects {
@@ -197,8 +197,8 @@ footer {
     font-size: .85em;
     width: 100%;
     max-width: 960px;
-    font-weight: lighter;
-    letter-spacing: .015em;
+    font-weight: 100;
+    letter-spacing: .095em;
     position: static;
 }
 
@@ -224,33 +224,27 @@ footer {
 }
 
 .folder {
-    height: 85px;
-    width: 100px;
+    height: 75px;
+    width: 90px;
     border-radius: 5px;
 }
 
 .folder:hover{
-    height: 87px;
-    width: 102px;
-    border-radius: 5px;
+    animation: shake .6s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes shake {
+    65% { transform: translate(0px, 2px) rotate(0deg); }
+}
+
 
 .linkedin {
-    height: 40px;
-    width: 40px;
-}
-
-.linkedin:hover {
     height: 42px;
     width: 42px;
 }
 
 .github {
-    height: 40px;
-    width: 40px;
-}
-
-.github:hover {
     height: 42px;
     width: 42px;
 }
