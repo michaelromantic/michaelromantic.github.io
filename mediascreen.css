@@ -8,7 +8,7 @@
 }
     
 html {
-    font-size: 14px;
+    font-size: 15px;
     background: rgb(255, 255, 255);
     margin-top: 0em;
     background-image: url("/images/notebook.png");
@@ -152,7 +152,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 65vh;
     background-image: url("/images/Background.svg");
     background-size: cover;
     margin: auto;
