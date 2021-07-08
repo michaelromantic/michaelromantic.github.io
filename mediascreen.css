@@ -8,7 +8,7 @@
 }
     
 html {
-    font-size: 12px;
+    font-size: 14px;
     background: rgb(255, 255, 255);
     margin-top: 0em;
     background-image: url("/images/notebook.png");
@@ -32,7 +32,7 @@ html {
 }
 
 .nav svg{
-    width: 3.5rem;
+    width: 2.5rem;
 }
 
 .close{
@@ -115,7 +115,7 @@ svg path{
     position: fixed;
     right: 0;
     z-index: 2;
-    margin: .5rem 1.25rem
+    margin: .5rem 1rem
 }
 
 #nav__checkbox:checked ~ label.nav__toggle .menu {
@@ -134,13 +134,12 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: -.5em auto;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     text-align: center;
     letter-spacing: .015em;
     padding-top: 3rem;
-    padding-left: .1em;
-    padding-right: .1em;
+
 }
 
 .aboutMe{
@@ -166,7 +165,7 @@ main{
     flex-direction: column-reverse;
     align-items: center;
     justify-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 h1 {
@@ -223,7 +222,7 @@ section > p {
     padding: 1.5em;
     margin: 1em;
     border-radius: 5.5px;
-    max-width: 21em;
+    max-width: 18em;
 }
 
 h3 {
@@ -258,7 +257,7 @@ footer {
     width: 100%;
     max-width: 960px;
     font-weight: 100;
-    letter-spacing: .095em;
+    letter-spacing: .015em;
     position: static;
 }
 
