@@ -8,12 +8,12 @@
 }
     
 html {
-    font-size: 15px;
+    font-size: 16px;
     background: rgb(255, 255, 255);
     margin-top: 0em;
     background-image: url("/images/notebook.png");
 }
-    
+
 .nav__menuDesktop{
     display: none;
 }
@@ -28,11 +28,11 @@ html {
     position: absolute;
     cursor: pointer;
     margin: 0rem 1rem;
-    right: 0;
+    left: 0;
 }
 
 .nav svg{
-    width: 2.5rem;
+    width: 3rem;
 }
 
 .close{
@@ -152,7 +152,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 65vh;
+    height: 70vh;
     background-image: url("/images/Background.svg");
     background-size: cover;
     margin: auto;
@@ -181,6 +181,7 @@ h1 {
     box-shadow: 0 0 12px rgb(99, 99, 99);
 
 }
+
 
 h2{
     font-size: 28px;
@@ -283,8 +284,8 @@ footer {
 }
 
 .folder {
-    height: 75px;
-    width: 90px;
+    height: 60px;
+    width: 75x;
     border-radius: 5px;
 }
 
@@ -305,4 +306,14 @@ footer {
 .github {
     height: 55px;
     width: 55px;
+}
+
+@media screen and (orientation:landscape){
+    .picture{
+        display: none;
+    }
+
+    .nav__menuMobile{
+        padding-top:2rem;
+    }
 }
