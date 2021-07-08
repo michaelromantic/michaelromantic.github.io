@@ -1,37 +1,20 @@
 * {
     font-family: 'Roboto', Helvetica, sans-serif;
     line-height: 1.618em;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: rgb(34, 34, 34);
     justify-items: center;
 }
-
+    
 html {
-    font-size: 16px;
+    font-size: 12px;
     background: rgb(255, 255, 255);
     margin-top: 0em;
     background-image: url("/images/notebook.png");
 }
-
-h1 {
-    color:rgb(255, 59, 59);
-    font-size: calc(30px + 1vw);
-    text-shadow: 0 0 4px rgb(182, 182, 182);
-}
-
-/* header {
-    top: 0;
-    padding: 0 3%;
-    width: 100%;
-    height: auto;
-    background: rgba(249, 249, 251, 0.95);
-    border-bottom: 2px solid rgb(245, 245, 245);
-    box-shadow: 2px 2px 2px rgba(216, 216, 216, 0.144);
-} */
-
-.nav__menuMobile{
+    
+.nav__menuDesktop{
     display: none;
 }
 
@@ -39,97 +22,106 @@ h1 {
     background: rgba(249, 249, 251, 0.95);
     border-bottom: 2px solid rgb(245, 245, 245);
     box-shadow: 2px 2px 2px rgba(216, 216, 216, 0.144);
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    
 }
 
 .nav__toggle{
-    display: none;
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
 }
 
 .nav svg{
-    width: 2.5rem;
+    width: 3.5rem;
 }
 
 .close{
     display: none;
+    margin-top: 5rem;
 }
 
+.menu{
+    margin-top: 0.5rem;
+}
 
+svg path{
+    fill:rgb(255, 59, 59);
+}
 
 .nav__checkbox{
     display: none;
 }
 
-.nav__menuDesktop{
+.nav__menuMobile{
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 0rem;
     align-items: center;
     justify-content: center;
-    margin: .5rem;
-    align-content: space-between;
+    display: none;
+    height: 100vh;
+    width: 100.5vw;
+    text-align: center;
+    background:rgba(36, 36, 36, 0.97);
+    padding-top:10rem;
+}
+
+.nav h3{
+    padding: 1.2rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: rgb(255, 59, 59);
+    letter-spacing: .1em;
 }
 
 .nav li{
     list-style: none;
-}
-
-.nav a{
+    padding: 1.2rem;
     text-decoration: none;
-    font-size: calc(15px + .25vw);
-    color: rgb(34, 34, 34);
-    letter-spacing: .25em;
-    padding: 5px;
+    font-size: 1.5rem;
+    color: rgb(255, 59, 59);
 }
 
-.nav a:hover{
-    color: white;
-    border-radius: 11px;
-    background: rgb(255, 59, 59);
-    font-weight: lighter;
-    box-shadow: 0 0 11px rgb(128, 128, 128);
-    padding: 5px;
-}
-
-/* nav{
-    max-height: 45px;
-    height: 6vh;
-    display: grid;
-} */
-
-.nav_links {
+.mobileLinks{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-top: 0em;
-    align-content: space-between;
-    letter-spacing: .25em;
-    font-size: calc(14px + .30vw);
+    padding: 1.2rem;
 }
 
-.nav_links li {
-    padding: 0px 9px;
-
+.mobileLinks svg{
+    width: 75px;
 }
 
-.nav_links li a {
+.nav li a{
     text-decoration: none;
-    color: rgb(34, 34, 34);
+    font-size: 2.5rem;
+    color: rgb(255, 66, 66);
+    letter-spacing: .25em;
 }
 
-.nav_links li a:hover{
-    color: white;
-    border-radius: 9px;
-    background: rgb(255, 59, 59);
-    font-weight: lighter;
-    box-shadow: 0 0 12px rgb(182, 182, 182);
+#nav__checkbox:checked ~ main{
+    display: none;
 }
+
+#nav__checkbox:checked ~ ul.nav__menuMobile{
+    display: block;
+    z-index: 1;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    margin: .5rem 1.25rem
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
 
 main{
     display: flex;
@@ -141,13 +133,14 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
-    max-width: 915px;
-    width: 90vw;
+    align-items: center;
+    margin: -.5em auto;
+    width: 100%;
     text-align: center;
     letter-spacing: .015em;
-    padding: 3rem 0 3rem 0;
-
+    padding-top: 3rem;
+    padding-left: .1em;
+    padding-right: .1em;
 }
 
 .aboutMe{
@@ -159,31 +152,35 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 915px;
-    width: 92vw;
-    max-height: 400px;
-    padding: 4em 2em 4em 2em;
-    background-image: url("/images/BackgroundCapture.JPG");
-    background-size: contain;
-    margin: 4rem auto;
-    border-radius: 27.5px;
-    box-shadow: 0 1px 12px rgb(175, 175, 175);
+    width: 100vw;
+    height: 50vh;
+    background-image: url("/images/Background.svg");
+    background-size: cover;
+    margin: auto;
+    /* box-shadow: 0 1px 12px rgb(175, 175, 175); */
     text-align: center;
 }
 
 #me_Container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    color:rgb(255, 59, 59);
+    font-size: 20px;
+    text-shadow: 0 0 4px rgb(182, 182, 182);
 }
 
 .picture {
     height: auto;
-    width: calc(200px + 5vw);
+    width: 45%;
     border-radius: 5px;
-    box-shadow: 0 0 12px rgb(182, 182, 182);
+    box-shadow: 0 0 12px rgb(99, 99, 99);
+
 }
 
 h2{
@@ -191,8 +188,6 @@ h2{
 }
 
 #aboutUs {
-    border-top: 3px solid rgb(34, 34, 34);
-    /* border-bottom: 1px solid rgb(233, 230, 230); */
 }
 
 .skills {
@@ -208,11 +203,6 @@ section > p {
     margin: 1em 0;
 }
 
-#myProjects{
-    /* border-bottom: 1px solid rgb(233, 230, 230); */
-    padding-top: 0;
-}
-
 #myProjects h2 {
     padding-bottom: .5em;
 }
@@ -225,7 +215,6 @@ section > p {
     column-gap: 1em;
     font-size: 12px;
     align-items: space-around;
-    
 }
 
 #projects article {
@@ -248,9 +237,7 @@ h3 {
 }
 
 #getInTouch{
-    border-bottom: 3px solid rgb(34, 34, 34);
-    padding-top: 0em; 
-    padding-bottom: 1em;   
+display: none;
 }
 
 #getInTouch p {
@@ -259,17 +246,19 @@ h3 {
 
 #getInTouch ul {
     list-style: none;
+    padding: 0 0 1em 0;
+    border-bottom: 3px solid rgb(34, 34, 34);
 }
 
 footer {
     color: rgb(34, 34, 34);
-    padding: 1em 0 1em 0;
+    padding: 2em 0 1em 0;
     text-align: center;
     font-size: .85em;
     width: 100%;
     max-width: 960px;
     font-weight: 100;
-    /* letter-spacing: .095em; */
+    letter-spacing: .095em;
     position: static;
 }
 
@@ -309,14 +298,12 @@ footer {
     65% { transform: translate(0px, 2px) rotate(0deg); }
 }
 
-
 .linkedin {
-    height: 42px;
-    width: 42px;
+    height: 55px;
+    width: 55px;
 }
 
 .github {
-    height: 42px;
-    width: 42px;
+    height: 55px;
+    width: 55px;
 }
-
