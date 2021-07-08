@@ -64,7 +64,7 @@ svg path{
     width: 100.5vw;
     text-align: center;
     background:rgba(36, 36, 36, 0.97);
-    padding-top:10rem;
+    padding-top:5rem;
 }
 
 .nav h3{
@@ -165,7 +165,7 @@ main{
     flex-direction: column-reverse;
     align-items: center;
     justify-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 h1 {
@@ -176,10 +176,10 @@ h1 {
 
 .picture {
     height: auto;
-    width: 45%;
+    width: 55%;
     border-radius: 5px;
     box-shadow: 0 0 12px rgb(99, 99, 99);
-
+    margin: 5px;
 }
 
 
